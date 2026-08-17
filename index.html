@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Work Tracker</h1>
+        <p>Учёт рабочего времени</p>
+    </header>
+
+    <div class="month-selector">
+        <button id="prevMonth">←</button>
+        <h2 id="currentMonth"></h2>
+        <button id="nextMonth">→</button>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Пришёл</th>
+                    <th>Ушёл</th>
+                    <th>Работа</th>
+                </tr>
+            </thead>
+            <tbody id="workTable"></tbody>
+        </table>
+    </div>
+
+    <div class="total">
+        <span>Всего за месяц:</span>
+        <strong id="totalHours">0 ч 00 мин</strong>
+    </div>
+
+    <button id="clearMonth" class="clear-button">
+        Очистить месяц
+    </button>
+
+    <footer>
+        <p>By Imran</p>
+
+        <div class="contacts">
+            <a href="https://t.me/onesigxx" target="_blank">
+                Telegram: @onesigxx
+            </a>
+
+            <a href="tel:+77003220810">
+                📞 +7 700 322 08 10
+            </a>
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
